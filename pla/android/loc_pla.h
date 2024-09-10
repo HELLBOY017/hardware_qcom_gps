@@ -40,7 +40,9 @@ extern "C" {
 #endif
 
 #include <cutils/properties.h>
+#if !defined(__ANDROID__)
 #include <cutils/threads.h>
+#endif
 #include <cutils/sched_policy.h>
 #include <cutils/android_filesystem_config.h>
 #include <string.h>
